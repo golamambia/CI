@@ -1,0 +1,27 @@
+aside{
+	&#fliter_aside{	
+	
+	h2{ font-size:12px;text-transform:uppercase; padding:15px; background:#fff; margin:0;}
+	#filter_set{
+		*{ border-radius:0;}
+		.panel-default{ border-color:transparent;
+			.panel-heading{
+				border-top:1px solid #ccc;
+					h4{
+						&.panel-title{font-size:16px; font-weight:700;
+								a{ &:hover{ text-decoration:none; }}
+						}}		
+			}
+			
+			.list-group{ li{
+				 a { font-size:14px; color:#000000;
+			&:hover{ text-decoration:none; }
+			 }}}
+			}
+		}	
+	}
+	/*fliter_aside end*/	
+	}
+
+
+
