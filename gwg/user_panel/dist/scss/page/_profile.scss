@@ -1,0 +1,101 @@
+#profile_details{	
+
+  .hed_font {font-size: 16px;
+  a {color: #2874f0; font-size:14px;}
+  }
+  .m_t15{margin-top: 15px;}
+  .m_t20{margin-top: 20px;}
+  .m_t30{margin-top: 30px;}
+  .m_b30{margin-bottom: 30px;}
+  
+  .inp_sty{
+	height: 43px !important;
+    border-radius: 0px !important;
+    background: #fafafa !important;
+}
+.ord_prod_name{
+	font-size: 14px;
+    color: black;
+    font-weight: 600;
+	}
+.fu_text{font-weight: 600;
+    color: gray;
+	}
+.ord_btn_mor{ height: 40px;
+    line-height: 40px;
+	color:#2874f1;
+	text-decoration:none !important;
+	text-transform:uppercase !important;
+	}
+	
+.ord_btn_mor_hover:hover{
+	text-decoration:none !important;
+	}
+.dill_icon{    font-size: 18px;
+    color: #9c9c9c;
+    margin-top: 40px;}
+.pri_fon_size{
+	font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+	}
+	
+.pri_dill{
+	font-size: 14px;
+    color: gray;
+	}
+.pri_par{font-size: 14px; color:#049703;}
+.pri_rat_btn{
+	background-color: green !important;
+    color: white !important;
+    padding: 5px !important;
+    font-size: 14px !important;}
+	
+	.icon_call{color: #337ab7; margin-right:5px;}
+	
+	.bor_gero{border-radius: 0px !important;}
+	.fon_wei600{ font-weight:600;}
+	.ma_b_gero{margin-bottom: 0px !important;}
+
+
+.nav-tabs{
+	 background:linear-gradient(to bottom, #ed8831 0%, #ae5108 100%);
+		li{
+			width:200px;display:inline;
+			a{font-size: 16px; font-weight:300; width:inherit; border:none; border-radius:0; padding:10px 5px; height:42px; }
+			&:last-child{
+				
+				a{display:inherit; font-size: 16px; font-weight:300; width:inherit; border:none; border-radius:0; padding:10px 5px; height:42px; }
+				}
+			&.dropdown{	
+						a{display:inherit; font-size: 16px; font-weight:300; width:42px!important; border:none; border-radius:0; padding:10px 5px; 
+						height:42px!important; }
+				.dropdown-menu{
+					li{ display:block;
+					a{display:inherit; font-size: 16px; font-weight:300; width:inherit; border:none; border-radius:0; padding:10px 5px; height:42px; }	
+					&.active{a{ display:block;width:inherit!important;}}
+					}
+					}
+			
+			
+			}	
+			}
+	
+	}
+
+@media (max-width: 768px) {
+
+.tex_li_sm{ 
+text-align:left !important;
+margin-top: 10px;
+}
+.tex_li_sm_btn{ text-align: left !important;
+    margin-top: -27px;
+    margin-bottom: 10px !important;}
+
+
+}
+
+
+
+}
