@@ -175,18 +175,19 @@ public function user_add()
             //     'name'      => $this->input->post('name'),
             //     'email'      => $this->input->post('email'),
             //     'phone'     => $this->input->post('phone'),
-            //     //'status'   => $this->input->post('status'),
-            //      'entry_date'   =>date('Y-m-d'),
-            //     'status'        => $this->input->post('status')
+            //     'status'   => $this->input->post('status'),
+            //      'entry_date'   =>date('Y-m-d')
+            //     'status'        => $this->input->post('status'),
             // );
 
-            //$_POST['entry_date']=date('Y-m-d');
+            $_POST['entry_date']=date('Y-m-d');
       //$jj=formData('k');
-     
+      //print_r($jj);
+      //exit();
         
     $query= $this->General_model->show_data_id('user_table','','','insert',$this->input->post());
     $this->session->set_flashdata('message', 'Data successfully Saved');
- 
+
        redirect('apanel/user/user_add'); 
         } 
         } 

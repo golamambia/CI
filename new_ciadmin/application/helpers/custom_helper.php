@@ -4,28 +4,28 @@
 
 
 if ( ! function_exists('formData')){
-   function formData($user_id){
+   function formData($table,$request){
       
        // get main CodeIgniter object
-       // $ci =& get_instance();
+        $ci =& get_instance();
        
        // //load databse library
-       // $ci->load->database();
-       // //get data from database
-       // $query = $ci->db->get_where('user_table',array('id'=>1));
+        $ci->load->database();
        
-       // if($query->num_rows() > 0){
-       //     $result = $query->row_array();
-       //     return $result;
-       // }else{
-       //     return false;
-       // }
-    // foreach($user_id as $key => $val)  
-    // {  
-    //     //$post[$key] =$this->input->post($key);
-    //     $post[$key] =$key;    
-    // }  
-       $hh=getField('user_table');
-    return $hh;
+       $field_list = $ci->db->list_fields($table);
+       foreach($request as $key => $value)
+  {
+  foreach($field_list as $field => $name)
+  {
+  if(strtolower(trim($key))==strtolower(trim($name)))
+  {
+  $data[$key] = $value;
+  break;
+  }
+  }
+  }
+  return $data;
+        
+    //return $field_list;
    }
 }
