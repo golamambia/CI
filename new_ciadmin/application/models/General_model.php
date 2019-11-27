@@ -21,16 +21,20 @@ class General_model extends CI_Model{
 			return $result;
 		}
 	if($action=='insert'){
-		$return = $this->db->insert($table_name, $data);
+		$data['entry_date']=date('Y-m-d');
+		$value=formData($table_name,$data);
+		$return = $this->db->insert($table_name, $value);
 		if ((bool) $return === TRUE) {
 			return $this->db->insert_id();
 		}else {
 			return $return;
-		}       
+		}  
+		    
 	}
 	if($action=='update'){
+		$value=formData($table_name,$data);
 		$this->db->where($fieldname, $id);
-		$return=$this->db->update($table_name, $data);
+		$return=$this->db->update($table_name, $value);
 		return $return;
 	}
 	if($action=='delete'){
